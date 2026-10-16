@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071827">
+<meta name="description" content="Academic profile of Dr. Mahesh Kumar, Assistant Professor in the Department of ICT at Pandit Deendayal Energy University, working on microfluidics, MEMS, biosensors, and embedded intelligence for healthcare.">
+<title>Dr. Mahesh Kumar | Academic & Research Profile</title>
+<style>
+:root{
+  --bg:#f4f7fb;--surface:#ffffff;--ink:#142536;--muted:#5b6d7f;
+  --navy:#071827;--navy2:#0b263a;--teal:#00a6a6;--cyan:#55d6d0;
+  --gold:#f4b860;--line:#dce5ed;--shadow:0 14px 38px rgba(9,32,51,.08);
+  --radius:20px;--max:1160px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.container{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(7,24,39,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{color:#fff;text-decoration:none;font-weight:750;letter-spacing:-.02em;white-space:nowrap}
+.brand span{color:var(--cyan)}
+.nav-links{display:flex;align-items:center;gap:22px;overflow-x:auto}
+.nav-links a{font-size:.88rem;color:#d5e4ed;text-decoration:none;white-space:nowrap}
+.nav-links a:hover{color:var(--cyan)}
+.hero{position:relative;overflow:hidden;color:#f4fbff;background:radial-gradient(circle at 83% 25%,rgba(0,166,166,.24),transparent 28%),linear-gradient(125deg,var(--navy),var(--navy2) 65%,#103b50);padding:82px 0 68px}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(85,214,208,.16);border-radius:50%;pointer-events:none}
+.hero:before{width:420px;height:420px;right:-90px;top:-150px}
+.hero:after{width:300px;height:300px;right:-30px;top:-90px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:48px;align-items:center;position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold);font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;font-weight:800}
+.eyebrow:before{content:"";width:26px;height:2px;background:var(--gold)}
+h1{font-size:clamp(2.45rem,5.5vw,4.65rem);line-height:1.06;letter-spacing:-.055em;margin:18px 0 18px;color:#fff}
+.role{font-size:1.12rem;color:#d7e7f0;margin:0;line-height:1.7}
+.hero p.summary{max-width:720px;color:#c3d7e4;font-size:1.04rem;margin:22px 0 0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:11px 18px;font-weight:750;text-decoration:none;border:1px solid transparent;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--cyan);color:#06202d}
+.btn-secondary{border-color:rgba(255,255,255,.3);color:#f4fbff;background:rgba(255,255,255,.04)}
+.research-visual{min-height:280px;border:1px solid rgba(85,214,208,.28);border-radius:28px;background:rgba(255,255,255,.035);padding:22px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:inset 0 0 60px rgba(0,166,166,.05)}
+.visual-label{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#a9d5df}
+.chip{position:relative;height:130px;border:2px solid rgba(85,214,208,.65);border-radius:70px 70px 26px 26px;margin:12px 8px 0;background:linear-gradient(180deg,rgba(85,214,208,.12),rgba(85,214,208,.02));overflow:hidden}
+.channel{position:absolute;left:0;right:0;top:50%;height:34px;transform:translateY(-50%);background:#071827;border-block:2px solid rgba(85,214,208,.65)}
+.branch{position:absolute;right:17%;height:46px;width:43%;border:2px solid rgba(85,214,208,.65);border-left:0;border-radius:0 18px 18px 0}
+.branch.top{top:16px;border-bottom:0}.branch.bottom{bottom:16px;border-top:0}
+.particle{position:absolute;border-radius:50%;width:9px;height:9px;top:calc(50% - 4px);background:#55d6d0;box-shadow:0 0 12px rgba(85,214,208,.55)}
+.p1{left:13%}.p2{left:28%;background:#55d6d0}.p3{left:43%;background:#ff9879;width:12px;height:12px;top:calc(50% - 25px)}.p4{left:58%;background:#ff9879;width:12px;height:12px;top:calc(50% + 14px)}.p5{left:76%;background:#55d6d0}
+.visual-caption{display:flex;justify-content:space-between;gap:12px;font-size:.78rem;color:#c3d7e4;margin-top:18px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:var(--cyan)}.dot.coral{background:#ff9879}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-28px;position:relative;z-index:3}
+.metric{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+.metric strong{display:block;font-size:1.8rem;line-height:1.2;letter-spacing:-.04em;color:#087f87}
+.metric span{display:block;color:var(--muted);font-size:.86rem;margin-top:7px}
+section{padding:68px 0}
+.section-heading{max-width:760px;margin-bottom:28px}
+.section-kicker{font-size:.76rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:#087f87}
+h2{font-size:clamp(1.8rem,3vw,2.55rem);line-height:1.18;letter-spacing:-.04em;margin:8px 0 12px}
+.section-heading p{color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.panel p:first-child{margin-top:0}.panel p:last-child{margin-bottom:0}
+.focus-list{display:grid;gap:13px}
+.focus-item{display:flex;gap:13px;align-items:flex-start}
+.focus-icon{width:38px;height:38px;flex:none;border-radius:12px;background:#e5f8f6;color:#087f87;display:grid;place-items:center;font-weight:900}
+.focus-item strong{display:block;margin-bottom:2px}.focus-item span{color:var(--muted);font-size:.92rem}
+.tag-list{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.tag{border:1px solid #cce7e6;background:#effafa;color:#146a70;padding:7px 12px;border-radius:999px;font-size:.84rem;font-weight:650}
+.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.research-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow);min-height:220px}
+.card-number{font-size:.78rem;color:#087f87;font-weight:850;letter-spacing:.12em}
+.research-card h3{font-size:1.18rem;line-height:1.35;margin:13px 0 9px}
+.research-card p{color:var(--muted);font-size:.94rem;margin:0}
+.research-card .mini-tags{margin-top:17px;font-size:.78rem;color:#087f87;font-weight:750}
+.soft-section{background:#eaf1f6}
+.pub-list,.patent-list{display:grid;gap:14px}
+.pub-card,.patent-card{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:21px 24px;display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+.pub-card h3,.patent-card h3{font-size:1rem;line-height:1.5;margin:0 0 7px}
+.meta{font-size:.87rem;color:var(--muted)}
+.status{flex:none;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#087f87;background:#e5f8f6;padding:6px 9px;border-radius:999px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.subheading{font-size:1.2rem;margin:0 0 16px}
+.project-list{display:grid;gap:12px}
+.project{padding:15px 0;border-bottom:1px solid var(--line)}
+.project:last-child{border-bottom:0;padding-bottom:0}
+.project strong{display:block}.project span{color:var(--muted);font-size:.88rem}
+.membership{display:flex;flex-wrap:wrap;gap:10px}
+.membership span{background:#f2f6f9;border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:.87rem;font-weight:650}
+.contact{background:linear-gradient(125deg,#071827,#0b3548);color:#f4fbff;padding:64px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.contact p{color:#c3d7e4}
+.contact-links{display:grid;gap:12px}
+.contact-link{display:flex;align-items:center;gap:12px;padding:15px 17px;border:1px solid rgba(255,255,255,.17);border-radius:13px;text-decoration:none;color:#fff;overflow-wrap:anywhere}
+.contact-link:hover{border-color:var(--cyan);background:rgba(255,255,255,.04)}
+.contact-link small{display:block;color:#a9c7d6;font-size:.76rem}
+footer{background:#04111d;color:#9db3c2;padding:20px 0;font-size:.82rem}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.note{font-size:.85rem;color:var(--muted)}
+
+/* Recent-updates vertical ticker */
+.updates-panel{min-height:360px;border:1px solid rgba(85,214,208,.28);border-radius:24px;background:rgba(255,255,255,.045);padding:20px 20px 16px;box-shadow:inset 0 0 50px rgba(0,166,166,.05)}
+.updates-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.updates-title{display:flex;align-items:center;gap:9px;font-size:1.08rem;font-weight:800;color:#f4fbff}
+.live-dot{width:8px;height:8px;border-radius:50%;background:#55d6d0;box-shadow:0 0 0 5px rgba(85,214,208,.12);flex:none}
+.updates-label{display:block;color:#a9c7d6;font-size:.69rem;letter-spacing:.13em;text-transform:uppercase;margin-top:3px}
+.ticker-toggle{border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(255,255,255,.06);color:#e8f5fa;padding:7px 10px;font:inherit;font-size:.76rem;cursor:pointer}
+.ticker-toggle:hover{border-color:#55d6d0}
+.ticker-window{height:290px;overflow:hidden;position:relative;mask-image:linear-gradient(transparent,black 5%,black 95%,transparent)}
+.ticker-track{animation:updates-scroll 34s linear infinite}
+.updates-panel:hover .ticker-track,.updates-panel:focus-within .ticker-track{animation-play-state:paused}
+.updates-panel.is-paused .ticker-track{animation-play-state:paused}
+.update-item{position:relative;padding:13px 4px 15px 18px;border-bottom:1px solid rgba(255,255,255,.12);min-height:86px}
+.update-item:before{content:"";position:absolute;left:0;top:19px;width:7px;height:7px;border-radius:50%;background:#55d6d0}
+.update-date{font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#f4b860}
+.update-item strong{display:block;color:#f4fbff;font-size:.9rem;line-height:1.4;margin:4px 0}
+.update-item p{color:#b9d3e0;font-size:.8rem;line-height:1.5;margin:0}
+.updates-foot{display:flex;justify-content:space-between;gap:10px;margin-top:10px;color:#a9c7d6;font-size:.72rem}
+@keyframes updates-scroll{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+
+@media(max-width:850px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.research-visual{max-width:560px}.updates-panel{max-width:620px;width:100%}.research-grid{grid-template-columns:repeat(2,1fr)}.metrics{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column;padding:13px 0;gap:8px}.nav-links{width:100%;padding-bottom:3px}}
+@media(max-width:560px){.container{width:min(100% - 28px,var(--max))}.hero{padding:58px 0 52px}.hero-grid{gap:28px}.research-grid{grid-template-columns:1fr}.updates-panel{padding:17px}.ticker-window{height:270px}.metrics{gap:9px}.metric{padding:15px}.metric strong{font-size:1.5rem}.metric span{font-size:.78rem}.pub-card,.patent-card{padding:18px;display:block}.status{display:inline-block;margin-top:12px}.panel{padding:21px}section{padding:52px 0}.visual-caption{font-size:.7rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#top">Mahesh <span>Kumar</span> / Research</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#patents">Patents</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">MEMS · Microfluidics · Embedded Intelligence</div>
+        <h1>Dr. Mahesh Kumar</h1>
+        <p class="role"><strong>Assistant Professor</strong><br>Department of ICT, School of Technology<br>Pandit Deendayal Energy University (PDEU), Gandhinagar, India</p>
+        <p class="summary">Research at the intersection of microfluidic systems, biomedical sensing, and intelligent embedded technologies—with a focus on translating engineering concepts into healthcare-oriented devices.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#research">Explore my research <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <aside class="updates-panel" aria-label="Recent profile updates">
+        <div class="updates-head">
+          <div><div class="updates-title"><span class="live-dot" aria-hidden="true"></span>Recent Updates</div><span class="updates-label">Research · Patents · Academic</span></div>
+          <button class="ticker-toggle" type="button" aria-pressed="false" aria-label="Pause recent updates">Ⅱ Pause</button>
+        </div>
+        <div class="ticker-window">
+          <div class="ticker-track">
+            <article class="update-item"><span class="update-date">08 Oct 2026</span><strong>Patent application filed</strong><p>Oxygen and Thermal Regulation Process for Vehicle Occupants Safety.</p></article>
+            <article class="update-item"><span class="update-date">07 Oct 2026</span><strong>Patent application filed</strong><p>System and Method for Temporal Clinical Reasoning using Sequential Biomarker Measurements.</p></article>
+            <article class="update-item"><span class="update-date">2026</span><strong>Research publication highlighted</strong><p>Recent work on MEMS switch design and enhanced electrostatic actuation is listed in the profile.</p></article>
+            <article class="update-item"><span class="update-date">10 Aug 2026</span><strong>Design filing</strong><p>Portable Biosensor Reader — Design 512831-001.</p></article>
+            <article class="update-item"><span class="update-date">Oct 2025</span><strong>Patent application published</strong><p>Cell detection method with a disposable microdevice and AI instrument.</p></article>
+            <article class="update-item"><span class="update-date">2024</span><strong>Patent granted</strong><p>Microfluidic Cancer Cell Sorter Device — IN 551135.</p></article>
+            <article class="update-item"><span class="update-date">08 Oct 2026</span><strong>Patent application filed</strong><p>Oxygen and Thermal Regulation Process for Vehicle Occupants Safety.</p></article>
+            <article class="update-item"><span class="update-date">07 Oct 2026</span><strong>Patent application filed</strong><p>System and Method for Temporal Clinical Reasoning using Sequential Biomarker Measurements.</p></article>
+            <article class="update-item"><span class="update-date">2026</span><strong>Research publication highlighted</strong><p>Recent work on MEMS switch design and enhanced electrostatic actuation is listed in the profile.</p></article>
+            <article class="update-item"><span class="update-date">10 Aug 2026</span><strong>Design filing</strong><p>Portable Biosensor Reader — Design 512831-001.</p></article>
+            <article class="update-item"><span class="update-date">Oct 2025</span><strong>Patent application published</strong><p>Cell detection method with a disposable microdevice and AI instrument.</p></article>
+            <article class="update-item"><span class="update-date">2024</span><strong>Patent granted</strong><p>Microfluidic Cancer Cell Sorter Device — IN 551135.</p></article>
+          </div>
+        </div>
+        <div class="updates-foot"><span>Latest items from this profile</span><span>Hover to pause</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <div class="container metrics" aria-label="Academic highlights">
+    <div class="metric"><strong>8 years</strong><span>Teaching and research experience</span></div>
+    <div class="metric"><strong>32</strong><span>Scopus-indexed publications</span></div>
+    <div class="metric"><strong>2</strong><span>Granted patents</span></div>
+    <div class="metric"><strong>IIT Kharagpur</strong><span>Master's degree</span></div>
+  </div>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-heading"><div class="section-kicker">About</div><h2>Engineering ideas for healthcare applications</h2><p>My work combines device-level modelling, experimental design thinking, and computational intelligence to explore practical biomedical and embedded-system solutions.</p></div>
+      <div class="about-grid">
+        <div class="panel">
+          <p>I am an Assistant Professor in the Department of ICT at the School of Technology, Pandit Deendayal Energy University (PDEU), Gandhinagar. My research focuses on dielectrophoresis (DEP)-based microfluidics, MEMS, biosensors, and machine-learning-assisted optimization of healthcare devices.</p>
+          <p>I earned my PhD from Manipal University Jaipur, where my work focused on the design and optimization of DEP microfluidic cell-sorter devices for separating healthy and malignant cells. I completed my postgraduate studies at IIT Kharagpur. Before joining PDEU, I taught at Graphic Era (Deemed to be University), Dehradun, and Maharshi Parshuram College of Engineering, Ratnagiri.</p>
+          <p class="note">My broader interests include translating computational models into accessible sensing platforms and embedded healthcare instruments.</p>
+        </div>
+        <div class="panel">
+          <h3 class="subheading">Research toolkit</h3>
+          <div class="focus-list">
+            <div class="focus-item"><div class="focus-icon">01</div><div><strong>Multiphysics modelling</strong><span>Finite-element modelling and COMSOL/MATLAB-based device analysis.</span></div></div>
+            <div class="focus-item"><div class="focus-icon">02</div><div><strong>Computational intelligence</strong><span>ANFIS surrogate modelling, fuzzy systems, and multi-objective optimization.</span></div></div>
+            <div class="focus-item"><div class="focus-icon">03</div><div><strong>Embedded healthcare</strong><span>Sensor interfacing, connected devices, and intelligent instrumentation.</span></div></div>
+          </div>
+          <div class="tag-list"><span class="tag">DEP microfluidics</span><span class="tag">MEMS</span><span class="tag">Biosensors</span><span class="tag">Embedded systems</span><span class="tag">IoT</span><span class="tag">AI-assisted design</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="soft-section">
+    <div class="container">
+      <div class="section-heading"><div class="section-kicker">Research</div><h2>Research themes</h2><p>Interdisciplinary work spanning micro-scale device physics, data-driven design, and embedded healthcare technologies.</p></div>
+      <div class="research-grid">
+        <article class="research-card"><div class="card-number">RESEARCH AREA / 01</div><h3>DEP-based microfluidic cell separation</h3><p>Modelling and optimization of microfluidic devices that exploit dielectrophoretic response to support the separation of healthy and malignant cells.</p><div class="mini-tags">COMSOL · FEM · Cell sorting</div></article>
+        <article class="research-card"><div class="card-number">RESEARCH AREA / 02</div><h3>AI-assisted device optimization</h3><p>Surrogate models and multi-objective optimization to explore device operating conditions, performance trade-offs, and candidate design points.</p><div class="mini-tags">ANFIS · NSGA-II · Explainable AI</div></article>
+        <article class="research-card"><div class="card-number">RESEARCH AREA / 03</div><h3>MEMS and biomedical sensors</h3><p>Device design and analysis for sensing and actuation, with an interest in compact platforms for biomedical and point-of-care applications.</p><div class="mini-tags">MEMS · Sensors · Actuators</div></article>
+        <article class="research-card"><div class="card-number">RESEARCH AREA / 04</div><h3>Impedance sensing and biosensing</h3><p>Sensor concepts and readout approaches for detecting biological signals and supporting healthcare-oriented measurement systems.</p><div class="mini-tags">Impedance · Biosensors</div></article>
+        <article class="research-card"><div class="card-number">RESEARCH AREA / 05</div><h3>Embedded intelligence and IoT</h3><p>Microcontroller-based systems, sensor integration, connectivity, and edge intelligence for practical instrumentation and monitoring.</p><div class="mini-tags">Embedded systems · IoT</div></article>
+        <article class="research-card"><div class="card-number">RESEARCH AREA / 06</div><h3>Disposable diagnostic platforms</h3><p>Exploring the integration of microdevices, sensors, and intelligent instruments to support accessible diagnostic workflows.</p><div class="mini-tags">Lab-on-chip · Instrumentation</div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="container">
+      <div class="section-heading"><div class="section-kicker">Selected work</div><h2>Publications</h2><p>A selection of recent work. Add DOI, publisher, and Google Scholar links to make each record easier to verify and explore.</p></div>
+      <div class="pub-list">
+        <article class="pub-card"><div><h3>ANFIS-NSGA-II Computational Surrogate Modeling and Optimization of DEP-Based Microfluidic Cancer Cell Sorter Device for Healthcare Applications</h3><div class="meta">M. Kumar, A. Saxena, N. Chourasia, A. Kumar, K. Singh · <em>Microsystem Technologies</em> · 2026</div></div><span class="status">Status to verify</span></article>
+        <article class="pub-card"><div><h3>Design and analysis of a cantilever-based MEMS switch with dielectric thin film material coatings for enhanced electrostatic actuation</h3><div class="meta">A. Saxena, C. Yadav, P. S. Shata, R. Singh, G. Ezhilarasan, M. Kumar, S. K. Verma, S. Patil · <em>Scientific Reports</em> · 2026</div></div><span class="status">2026</span></article>
+      </div>
+      <p class="note" style="margin-top:18px">Recommended next step: add verified publication links and a link to your Google Scholar profile. Avoid displaying an overall paper count here unless it is kept up to date.</p>
+    </div>
+  </section>
+
+  <section id="patents" class="soft-section">
+    <div class="container">
+      <div class="section-heading"><div class="section-kicker">Innovation</div><h2>Patents and intellectual property</h2><p>Selected granted patents, published applications, and design filings listed in the current profile information.</p></div>
+      <div class="patent-list">
+        <article class="patent-card"><div><h3>IN 551135 — A Microfluidic Cancer Cell Sorter Device</h3><div class="meta">Granted · 2024</div></div><span class="status">Granted</span></article>
+        <article class="patent-card"><div><h3>IN 573459 — A System and Method of Unmasking the Masked Face</h3><div class="meta">Co-inventor · 2025</div></div><span class="status">Granted</span></article>
+        <article class="patent-card"><div><h3>202521039407 — A cell detection method with disposable microdevice and AI instrument</h3><div class="meta">Filed 24 April 2025 · Published October 2025</div></div><span class="status">Published</span></article>
+        <article class="patent-card"><div><h3>202621120210 — System and Method for Temporal Clinical Reasoning using Sequential Biomarker Measurements</h3><div class="meta">Filed 7 October 2026</div></div><span class="status">Filed</span></article>
+        <article class="patent-card"><div><h3>202621120562 — Oxygen and Thermal Regulation Process for Vehicle Occupants Safety</h3><div class="meta">Filed 8 October 2026</div></div><span class="status">Filed</span></article>
+        <article class="patent-card"><div><h3>Design 512831-001 — Portable Biosensor Reader</h3><div class="meta">Filed 10 August 2026 · Associated with a dual-mode biosensor concept for early detection of acute pancreatitis</div></div><span class="status">Design filing</span></article>
+      </div>
+      <p class="note" style="margin-top:18px">Please verify application numbers, titles, dates, and legal status against official patent records before publishing.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-heading"><div class="section-kicker">Mentoring</div><h2>Student projects and teaching</h2><p>Project-based learning connects classroom concepts with practical modelling, hardware development, and healthcare-oriented problem solving.</p></div>
+      <div class="two-col">
+        <div class="panel"><h3 class="subheading">Selected student projects</h3><div class="project-list">
+          <div class="project"><strong>Microfluidic sensor design in FEM for DEP cell separation</strong><span>Ayushi Patel · Biotechnology</span></div>
+          <div class="project"><strong>Smart glucometer with AI-based prediction</strong><span>Rudra Patel · ICT</span></div>
+          <div class="project"><strong>AI-fuzzy based intelligent optimization of microfluidic devices</strong><span>Jenil Patel · ECE</span></div>
+          <div class="project"><strong>AI-enabled sensor geometry optimization for microfluidic cell sorters</strong><span>Vidhi Padhiyar · ECE</span></div>
+        </div></div>
+        <div class="panel"><h3 class="subheading">Teaching areas</h3><p>Courses and projects in embedded systems, computer design and application, IoT, microcontrollers, sensor interfacing, and applied computational methods.</p><h3 class="subheading" style="margin-top:26px">Professional memberships</h3><div class="membership"><span>IEEE Senior Member</span><span>IEEE EMBS</span><span>Life Member, ISTE</span><span>Life Member, IAENG</span></div><p class="note" style="margin-top:18px">Awards listed in the current profile: PRAISE Award (Manipal University Jaipur, twice) and Best Innovation Idea Based Paper, SV-TDFS-2022.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div><div class="section-kicker" style="color:var(--gold)">Contact</div><h2>Let's connect on research and collaboration</h2><p>For academic correspondence, research collaboration, student projects, and professional enquiries, please use the contact details below.</p><p style="font-size:.9rem">Department of ICT, School of Technology<br>Pandit Deendayal Energy University (PDEU)<br>Knowledge Corridor, Raisan Village, Gandhinagar, Gujarat, India</p></div>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:Mahesh.Kumar@sot.pdpu.ac.in"><span aria-hidden="true">✉</span><span><small>Institutional email</small>Mahesh.Kumar@sot.pdpu.ac.in</span></a>
+        <a class="contact-link" href="mailto:maheshkkamad@gmai.com"><span aria-hidden="true">✉</span><span><small>Additional email (please verify spelling)</small>maheshkkamad@gmai.com</span></a>
+        <a class="contact-link" href="https://www.pdpu.ac.in/" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span><span><small>Institution</small>Pandit Deendayal Energy University</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="container footer-inner"><span>© 2026 Dr. Mahesh Kumar · PDEU, Gandhinagar</span><span>Academic profile · Microfluidics · MEMS · Embedded intelligence</span></div></footer>
+
+<script>
+(function(){
+  const panel = document.querySelector('.updates-panel');
+  if (!panel) return;
+  const toggle = panel.querySelector('.ticker-toggle');
+  toggle.addEventListener('click', function(){
+    const paused = panel.classList.toggle('is-paused');
+    toggle.setAttribute('aria-pressed', String(paused));
+    toggle.setAttribute('aria-label', paused ? 'Resume recent updates' : 'Pause recent updates');
+    toggle.textContent = paused ? '▶ Play' : 'Ⅱ Pause';
+  });
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    panel.classList.add('is-paused');
+    toggle.setAttribute('aria-pressed', 'true');
+    toggle.setAttribute('aria-label', 'Resume recent updates');
+    toggle.textContent = '▶ Play';
+  }
+})();
+</script>
+
+</body>
+</html>
